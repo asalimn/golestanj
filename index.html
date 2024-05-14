@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="./public/css/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>gol</title>
+  </head>
+  <body>
+    <!--wrapper-->
+    <div class="wrapper w-full box-border overflow-hidden">
+      <!--make-header-->
+      <header
+        class="w-[100%] z-10 sticky top-0 h-auto mobile:bg-main-back desktop:bg-main-back mobile:flex mobile:flex-col mobile:gap-y-[5px] desktop:relative desktop:flex-row desktop:flex desktop:gap-x-18"
+      >
+        <div
+          class="header__img sticky bg-transparent mobile:w-full desktop:w-[200px] mobile:flex mobile:justify-center mobile:pt-[5px] desktop:bg-main-back"
+        >
+          <img
+            class="w-[170px] desktop:absolute desktop:top-[51px] desktop:right-[100px]"
+            src="./public/images/golestanlogo.png"
+            alt=""
+          />
+        </div>
+        <!--make-menu-->
+        <div class="menu desktop:w-full">
+          <div class="icon desktop:hidden">
+            <label
+              class="w-full bg-transparent flex flex-col items-start mt-[20px] mb-[20px]"
+              for="click__menu"
+            >
+              <div class="menu__svg flex justify-end mobile:mr-[20px]">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  x="0px"
+                  y="0px"
+                  width="30"
+                  height="30"
+                  viewBox="0,0,256,256"
+                >
+                  <g
+                    fill="#afb2b4"
+                    fill-rule="nonzero"
+                    stroke="none"
+                    stroke-width="1"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                    stroke-miterlimit="10"
+                    stroke-dasharray=""
+                    stroke-dashoffset="0"
+                    font-family="none"
+                    font-weight="none"
+                    font-size="none"
+                    text-anchor="none"
+                    style="mix-blend-mode: normal"
+                  >
+                    <g transform="scale(5.12,5.12)">
+                      <path
+                        d="M0,7.5v5h50v-5zM0,22.5v5h50v-5zM0,37.5v5h50v-5z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <input
+            type="checkbox"
+            name="menu"
+            class="peer hidden"
+            id="click__menu"
+          />
+          <div
+            class="menu__items w-full h-auto bg-main-back mobile:hidden desktop:flex desktop:flex-row mobile:flex-col mobile:items-start mobile:duration-300 peer-checked:flex desktop:gap-4 desktop:pt-[20px] desktop:mr-[350px]"
+          >
+            <a
+              class="text-white mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] mobile:mt-0 mobile:mb-[30px] mobile:ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0"
+              href="#"
+              >صفحه اصلی</a
+            >
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <div
+              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
+            >
+              <a
+                class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] desktop:hover:text-[white]"
+                href="#"
+                >شرکت گلستان
+              </a>
+              <!--make mini menu-->
+              <div
+                class="mini__menu mobile:hidden w-[180px] h-[250px] absolute bg-zinc-800 top-[68px] left-[720px] flex-col gap-y-[10px] desktop:hidden desktop:group-hover:flex"
+              >
+                <a
+                  href="#"
+                  class="mt-[5px] mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  معرفی شرکت
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  تاریخچه گلستان
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  اخبار و اطلاعیه ها
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  مسـًولیت های اجتماعی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  سازمان فروش
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  سازمان توزیع</a
+                >
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  برند ها
+                </a>
+              </div>
+              <!--end mini menu-->
+            </div>
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <div
+              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
+            >
+              <a
+                class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] desktop:hover:text-[white]"
+                href="#"
+                >محصولات
+              </a>
+              <!--make mini menu-->
+              <div
+                class="mini__menu mobile:hidden w-[180px] h-[370px] absolute bg-zinc-800 top-[66px] left-[630px] flex-col gap-y-[10px] desktop:hidden desktop:group-hover:flex"
+              >
+                <a
+                  href="#"
+                  class="mt-[5px] mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  چای
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  ناتس
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  ادویه و چاشنی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  برنج
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  زعفران و زرشک
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  دمنوش
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  حبوبات و غلات
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  عصاره های گیاهی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  قند و شکر
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  هاتی نودل
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  سایر محصولات
+                </a>
+              </div>
+              <!--end mini menu-->
+            </div>
+
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <a
+              class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 desktop:hover:text-[white]"
+              href="#"
+              >وبلاگ</a
+            >
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <a
+              class="text-color-font mobile:text-[16px] desktop:text-[18px]font-light leading-[20px] mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 desktop:hover:text-[white]"
+              href="#"
+              >قرعه کشی</a
+            >
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <a
+              class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 desktop:hover:text-[white]"
+              href="#"
+              >استخدام</a
+            >
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <div
+              class="mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 group"
+            >
+              <a
+                class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] desktop:hover:text-[white]"
+                href="#"
+              >
+                تماس با ما
+              </a>
+              <!--make mini menu-->
+              <div
+                class="mini__menu mobile:hidden w-[180px] h-[115px] absolute bg-zinc-800 top-[66px] left-[300px] flex-col gap-y-[10px] desktop:hidden desktop:group-hover:flex"
+              >
+                <a
+                  href="#"
+                  class="mt-[5px] mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  دفتر مرکزی
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  صدای مصرف کنندگان
+                </a>
+                <a
+                  href="#"
+                  class="mr-[10px] text-[gray] desktop:hover:text-[white]"
+                >
+                  ارتباط با مشترکین
+                </a>
+              </div>
+              <!--end mini menu-->
+            </div>
+
+            <span
+              class="desktop:w-[1px] desktop:h-8 desktop:bg-gray-500 desktop:mt-[20px]"
+            ></span>
+            <a
+              class="text-color-font mobile:text-[16px] desktop:text-[18px] font-light leading-[20px] mt-0 mb-[30px] ml-0 desktop:mt-[22px] mobile:mr-[30px] desktop:mr-0 desktop:hover:text-[white]"
+              href="#"
+              >EN</a
+            >
+          </div>
+        </div>
+        <!--end-menu-->
+      </header>
+      <!--end-header-->
+      <!--make introduction-->
+      <div class="intro mobile:mb-[30px] bg-white">
+        <div
+          class="luck bg-[#F2F2F2] mobile:flex mobile:flex-col w-full mobile:items-start mobile:content-start mobile:p-[30px] desktop:flex desktop:flex-row desktop:
+          content-center">
+          <div class="desktop:px-[200px] py-[50px]">
+            <p class="title__luck text-red-600 text-[35px]">
+              قرعه کشی ماهیانه گلستان
+            </p>
+            <p class="use__luck text-[#58595b] text-[23px]">
+              قرعه کشی ماهیانه مصرف کنندگان چای گلستان
+            </p>
+            <p
+              class="description__luck text-[#898989] text-[21.5px] font-[300] desktop:w-[470px] "
+            >
+              هر یک از مصرف‌ کنندگان محصولات چای گلستان می‌توانند با ارسال کد
+              قرعه کشی روی بسته به شماره 30007405 در قرعه کشی‌های ماهیانه سال
+              1402 شرکت . نگهداری از بسته‌بندی محصول برای اهدای جایزه الزامی است
+            </p>
+            <div class="button__info w-full mt-[20px] flex content-end">
+              <a
+                href="#"
+                class="button no-underline text-[20px] bg-white border-[1px] border-solid border-[#c8c8c8] rounded-[8px] text-[#7c7d7e] pr-[24px] pl-[24px] pt-[11px] pb-[12px]"
+                >اطلاعات بیشتر</a
+              >
+         </div>
+          </div>
+          <div class="img__teabig">
+            <img src="./images/teabig.png" alt="" class="mr-[120px]" />
+          </div>
+        </div>
+        <span class="w-[97%] m-auto bg-gray-300 mt-[10px] h-[2px] block rounded-sm"> </span>
+        <div class="desktop:px-[330px] desktop:py-[50px]">
+        <p class="title__luck2 text-red-600 mobile:text-[25px] desktop:text-[30px] px-[30px] py-[20px]">
+          معرفی گلستان
+        </p>
+        <p class="description__luck text-[#7a7a7a] text-[21.5px] px-[30px]">
+          آنچه که امروز با نام مجموعه
+          <span class=" text-red-600">گلستان</span> می‌شناسیم در سال 1329 بنیان
+          نهاده شد. زمانی که شرکت گلستان فعالیت خود را با بسته‌بندی و توزیع چای
+          پاکتی آغاز کرد. با گذر زمان و رشد اقتصاد کشور، نهال «گلستان» به تدریج
+          تقویت شد و شاخ و برگ گرفت. فعالیت‌های «گلستان» با تهیه، تولید و
+          بسته‌بندی بهترین محصولات غذایی گسترش پیدا کرد.
+          <span class=" text-red-600">گلستان</span> پس از سال‌ها تلاش همچنان
+          می‌کوشد تا به کمک تجربه‌های اندوخته شده در این سال‌ها کالاهایی قابل
+          اعتماد و با کیفیت .تولید نماید
+        </p>
+        <p class="text-[#7a7a7a] text-[21.5px] px-[30px] pt-[20px]">
+          هدفمندی و برنامه‌ریزی موثر، ایمان و عزم راسخ برای دستیابی به اهداف
+          تعیین شده، به کار گیری همکاران مجرب و دلسوز، استفاده از روش های نوین
+          بازاریابی و مشتری محوری از جمله عوامل مهم در استراتژی
+          <span class=" text-red-600">شرکت گلستان</span>
+          است.
+        </p>
+        <p
+          class="title__luck2  text-red-600  mobile:text-[25px] desktop:text-[30px] px-[30px] py-[20px] mt-[10px]"
+        >
+          محصولات گلستان
+        </p>
+        <p class="description__luck text-[#7a7a7a] text-[21.5px] px-[30px]">
+          <span class=" text-red-600">نام تجاری گلستان</span> قدمتی به اندازه
+          عمر شرکت گلستان دارد. گلستان ممتازترین محصولات خود را با این نام تجاری
+          عرضه می‌کند. مصرف‌کنندگان محصولات گلستان همواره از این نام تجاری خاطره
+          محصولاتی ممتاز و منحصر بفرد دارند و با اطمینان از نهایت کیفیت این نام
+          تجاری حمایت می‌کنند.
+        </p>
+      </div>
+      <div class="px-[330px] mobile:hidden desktop:flex flex-row gap-x-[25px] items-center justify-center">
+        <div class="part w-[185px] h-[250px] ">
+          <img src="./public/images/p1.png" alt="">
+          <p class="mr-[57px] py-[20px] text-gray-400 text-[22px]">سرمایه انسانی</p>
+           <span class="w-[100%] m-auto bg-gray-400 h-[3px] block rounded-sm"> </span>
+        </div>
+        <div class="part w-[185px] h-[250px] ">
+          <img src="./public/images/p2.png" alt="">
+          <p class="mr-[57px] py-[20px] text-gray-400 text-[22px]">مراکز فروش</p>
+           <span class="w-[100%] m-auto bg-gray-400 h-[3px] block rounded-sm"> </span>
+        </div>
+        <div class="part w-[185px] h-[250px] ">
+          <img src="./public/images/p3.png" alt="">
+          <p class="mr-[40px] py-[20px] text-gray-400 text-[22px]">مشتریان گلستان</p>
+           <span class="w-[100%] m-auto bg-gray-400 h-[3px] block rounded-sm"> </span>
+        </div>
+        <div class="part w-[185px] h-[250px] ">
+          <img src="./public/images/p4.png" alt="">
+          <p class="mr-[40px] py-[20px] text-gray-400 text-[22px]">محصولات گلستان</p>
+           <span class="w-[100%] m-auto bg-gray-400 h-[3px] block rounded-sm"> </span>
+        </div>
+       
+      </div>
+     </div>
+
+      <span class="w-[97%] m-auto bg-gray-400 h-[3px] block rounded-sm"> </span>
+      <!--end introduction-->
+     
+    </div>
+    <!--end-wrapper-->
+  </body>
+</html>

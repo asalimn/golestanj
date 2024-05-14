@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer components{
+    *{
+        direction: rtl;
+        font-family:var(--font-family);
+    }
+}
+
+:root{
+    --golcolor:crimson;
+}
+:root{
+    --font-color:rgb(129, 133, 136);
+}
+:root{
+    --font-family:IRANSans;
+}
+@font-face {
+    font-family: IranSans;
+    src: url(../fonts/IRANSans.eot);
+    src: url(../fonts/IRANSans.ttf);
+    src: url(../fonts/IRANSans.woff);
+    src: url(../fonts/IRANSans.woff2);
+}
+
