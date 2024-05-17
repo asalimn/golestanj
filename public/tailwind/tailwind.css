@@ -1,27 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@layer components{
-    *{
-        direction: rtl;
-        font-family:var(--font-family);
-    }
+@layer components {
+  * {
+    direction: rtl;
+    font-family: var(--font-family);
+  }
 }
 
-:root{
-    --golcolor:crimson;
+:root {
+  --golcolor: crimson;
 }
-:root{
-    --font-color:rgb(129, 133, 136);
+:root {
+  --font-color: rgb(129, 133, 136);
 }
-:root{
-    --font-family:IRANSans;
+:root {
+  --font-family: IRANSans;
+}
+.mainBG {
+  background-image: url(../images/banner.png);
 }
 @font-face {
-    font-family: IranSans;
-    src: url(../fonts/IRANSans.eot);
-    src: url(../fonts/IRANSans.ttf);
-    src: url(../fonts/IRANSans.woff);
-    src: url(../fonts/IRANSans.woff2);
+  font-family: IranSans;
+  src: url(../fonts/IRANSans.eot);
+  src: url(../fonts/IRANSans.ttf);
+  src: url(../fonts/IRANSans.woff);
+  src: url(../fonts/IRANSans.woff2);
 }
-
+.company__item1 {
+  background-image: url(../images/facebook-golestan.png);
+}
+.company__item2 {
+  background-image: url(../images/aparat-golestan.png);
+}
+.company__item3 {
+  background-image: url(../images/instagram-golestan.png);
+}
+.company__item4 {
+  background-image: url(../images/telegram-golestan.png);
+}
+.company__item5 {
+  background-image: url(../images/linkdin-golestan.png);
+}
+.company__item6 {
+  background-image: url(../images/icon6-golestan.png);
+}
