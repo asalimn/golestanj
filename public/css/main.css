@@ -575,24 +575,12 @@ video {
   left: 13%;
 }
 
-.left-\[200px\] {
-  left: 200px;
-}
-
 .left-\[38\%\] {
   left: 38%;
 }
 
 .left-\[45\%\] {
   left: 45%;
-}
-
-.left-\[530px\] {
-  left: 530px;
-}
-
-.left-\[620px\] {
-  left: 620px;
 }
 
 .top-0 {
@@ -607,28 +595,52 @@ video {
   top: 66%;
 }
 
-.top-\[66px\] {
-  top: 66px;
+.left-\[40\%\] {
+  left: 40%;
 }
 
-.top-\[68px\] {
-  top: 68px;
+.left-\[32\%\] {
+  left: 32%;
 }
 
-.top-\[66\] {
-  top: 66;
+.left-\[8\%\] {
+  left: 8%;
 }
 
-.left-\[\] {
-  left: ;
+.left-\[18\%\] {
+  left: 18%;
 }
 
-.top-\[\] {
-  top: ;
+.left-\[22\%\] {
+  left: 22%;
 }
 
-.left-\[38\] {
-  left: 38;
+.left-\[30\%\] {
+  left: 30%;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.left-\[52\%\] {
+  left: 52%;
+}
+
+.left-\[34\%\] {
+  left: 34%;
+}
+
+.left-\[44\%\] {
+  left: 44%;
+}
+
+.left-\[4\%\] {
+  left: 4%;
+}
+
+.left-\[19\%\] {
+  left: 19%;
 }
 
 .z-50 {
@@ -861,6 +873,10 @@ video {
   flex-wrap: wrap;
 }
 
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
 .content-center {
   align-content: center;
 }
@@ -971,8 +987,9 @@ video {
   background-color: rgb(205 228 176 / var(--tw-bg-opacity));
 }
 
-.bg-\[--golcolor\] {
-  background-color: var(--golcolor);
+.bg-\[crimson\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(220 20 60 / var(--tw-bg-opacity));
 }
 
 .bg-amber-100 {
@@ -1035,6 +1052,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-\[5px\] {
+  padding: 5px;
 }
 
 .px-\[18px\] {
@@ -1147,6 +1168,50 @@ video {
 
 .pt-\[30px\] {
   padding-top: 30px;
+}
+
+.pr-\[20\%\] {
+  padding-right: 20%;
+}
+
+.pr-\[20\] {
+  padding-right: 20;
+}
+
+.pr-\[\] {
+  padding-right: ;
+}
+
+.pr-\[5\%\] {
+  padding-right: 5%;
+}
+
+.pr-\[7\%\] {
+  padding-right: 7%;
+}
+
+.pr-\[10\%\] {
+  padding-right: 10%;
+}
+
+.pr-\[\%\] {
+  padding-right: %;
+}
+
+.pr-\[8\%\] {
+  padding-right: 8%;
+}
+
+.pt-\[10px\] {
+  padding-top: 10px;
+}
+
+.pb-\[5px\] {
+  padding-bottom: 5px;
+}
+
+.pt-\[\] {
+  padding-top: ;
 }
 
 .text-center {
@@ -1298,6 +1363,11 @@ video {
   color: var(--golcolor);
 }
 
+.text-\[crimson\] {
+  --tw-text-opacity: 1;
+  color: rgb(220 20 60 / var(--tw-text-opacity));
+}
+
 .text-\[gray\] {
   --tw-text-opacity: 1;
   color: rgb(128 128 128 / var(--tw-text-opacity));
@@ -1338,6 +1408,18 @@ video {
   color: rgb(161 161 170 / var(--tw-text-opacity));
 }
 
+.text-\[srimson\] {
+  color: srimson;
+}
+
+.text-\[csrimson\] {
+  color: csrimson;
+}
+
+.text-\[\] {
+  color: ;
+}
+
 .no-underline {
   text-decoration-line: none;
 }
@@ -1355,7 +1437,6 @@ video {
 }
 
 :root {
-  --golcolor: crimson;
   --font-color: rgb(129, 133, 136);
   --font-family: IRANSans;
 }
@@ -1541,6 +1622,14 @@ video {
     margin-top: 22px;
   }
 
+  .desktop\:mr-\[30\] {
+    margin-right: 30;
+  }
+
+  .desktop\:mr-\[30\%\] {
+    margin-right: 30%;
+  }
+
   .desktop\:block {
     display: block;
   }
@@ -1593,6 +1682,10 @@ video {
     flex-direction: row;
   }
 
+  .desktop\:flex-nowrap {
+    flex-wrap: nowrap;
+  }
+
   .desktop\:gap-4 {
     gap: 1rem;
   }
@@ -1610,6 +1703,41 @@ video {
   .desktop\:gap-x-\[50px\] {
     -moz-column-gap: 50px;
          column-gap: 50px;
+  }
+
+  .desktop\:gap-x-\[15\%\] {
+    -moz-column-gap: 15%;
+         column-gap: 15%;
+  }
+
+  .desktop\:gap-x-\[10\%\] {
+    -moz-column-gap: 10%;
+         column-gap: 10%;
+  }
+
+  .desktop\:gap-x-\[5\%\] {
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+
+  .desktop\:gap-x-\[12\%\] {
+    -moz-column-gap: 12%;
+         column-gap: 12%;
+  }
+
+  .desktop\:gap-x-\[8\%\] {
+    -moz-column-gap: 8%;
+         column-gap: 8%;
+  }
+
+  .desktop\:gap-x-\[\%\] {
+    -moz-column-gap: %;
+         column-gap: %;
+  }
+
+  .desktop\:gap-x-\[7\%\] {
+    -moz-column-gap: 7%;
+         column-gap: 7%;
   }
 
   .desktop\:bg-gray-500 {
@@ -1650,6 +1778,16 @@ video {
   .desktop\:py-\[50px\] {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+
+  .desktop\:px-\[10\] {
+    padding-left: 10;
+    padding-right: 10;
+  }
+
+  .desktop\:px-\[10\%\] {
+    padding-left: 10%;
+    padding-right: 10%;
   }
 
   .desktop\:pt-\[20px\] {
